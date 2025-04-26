@@ -6,7 +6,7 @@
     "dev": "next dev --turbopack",
     "nbuild": "next build",
     "build": "next build && next export",
-    "build-extension": "node scripts/fix-build.js"
+    "builde": "node scripts/fix-build.js"
   },
   "dependencies": {
     "next": "15.3.1",

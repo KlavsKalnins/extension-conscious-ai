@@ -4,7 +4,17 @@
     "version": "1.0",
     "description": "conscious-ai-description",
     "action": {
-      "default_popup": "index.html"
+      "default_popup": "index.html",
+      "default_icon": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+      }
+    },
+    "icons": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
     },
     "content_security_policy": {
       "extension_pages": "script-src 'self'; object-src 'self';"
