@@ -5,6 +5,9 @@ const nextConfig = {
   assetPrefix: process.env.NODE_ENV === 'production' ? '/.' : '',
   output: 'export',
   trailingSlash: true,
+  experimental: {
+    appDir: true, // Use the app router
+  },
 };
 
 export default nextConfig;

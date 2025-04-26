@@ -11,13 +11,24 @@
         "128": "icon128.png"
       }
     },
+    "permissions": ["scripting", "tabs", "activeTab", "storage"],
+    "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self';"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ],
+    "host_permissions": ["http://*/*", "https://*/*"],
+
     "icons": {
       "16": "icon16.png",
       "48": "icon48.png",
       "128": "icon128.png"
-    },
-    "content_security_policy": {
-      "extension_pages": "script-src 'self'; object-src 'self';"
     }
   }
-  
