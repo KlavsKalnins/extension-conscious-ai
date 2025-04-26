@@ -5,9 +5,8 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "nbuild": "next build",
-    "build": "next build && next export && move out/_next out/next && robocopy -/extension ./out /E",
-    "start": "next start",
-    "lint": "next lint"
+    "build": "next build && next export",
+    "build-extension": "node scripts/fix-build.js"
   },
   "dependencies": {
     "next": "15.3.1",
@@ -20,6 +19,8 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "cpx": "^1.5.0",
+    "mv": "^2.1.1",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
