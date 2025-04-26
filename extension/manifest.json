@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
-    "name": "Hello world Extension",
+    "name": "conscious-ai",
     "version": "1.0",
-    "description": "Extension that displays hello world.",
+    "description": "conscious-ai-description",
     "action": {
       "default_popup": "index.html"
     },
